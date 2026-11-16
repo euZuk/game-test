@@ -1,0 +1,64 @@
+body{
+    background: #182033;
+    background-image: url(../images/SCAPE-BACK.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+#cenario{
+    background: #bdeaff;
+    width: 600px;
+    height: 300px;
+    border-bottom: 15px solid greenyellow;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#boneco{
+    width: 70px;
+    height: 70px;
+    font-size: 80px;
+    position: absolute;
+    bottom: 27px;
+    left: -18.5px;
+}
+
+#obstaculo{
+    width: 55px;
+    height: 55px;
+    font-size: 55px;
+    position: absolute;
+    bottom: 11px;
+    filter: blur(0.3px);
+    animation: mover 2s infinite linear;
+}
+
+@keyframes mover{
+    0%{
+        left: 600px;
+    }
+    100%{
+        left: -30px;
+    }
+}
+
+@keyframes pular{
+    0%{
+        bottom: 30px;
+    }
+    50%{
+        bottom: 150px;
+    }
+    100%{
+        bottom: 30px;
+    }
+}
+
+.pulando{
+    animation: pular 1s;
+}
